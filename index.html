@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Poem Generator</title>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+<h1>Welome to the AI Recipe Generator</h1>
+ </header>
+
+<main>
+  <p>Not sure what to cook?</p>
+  <div class="form-container">
+<form id="recipe-generator-form">
+  <input 
+  type="text" 
+  placeholder="Enter an ingredient" 
+  autofocus 
+  required 
+  autocomplete="off"
+   class="instructions"
+   id="user-instructions"
+   />
+  <input type="submit" class="button" />
+</form>
+<div class="hint">i.e Squash, Cherries, Cheese, Salmon, or Steak</div>
+</div>
+<div class="recipe hidden" id="recipe"></div>
+</main>
+    <footer>
+      This AI project was coded by <a href=https://github.com/DemiLiloDev target="_blank">Demise Chipiliro Mnthambala</a> and is 
+      <a href=https://github.com/DemiLiloDev/poem-generator target="_blank"> 
+        open-sourced on GitHub</a> and is <a href=https://app.netlify.com/projects/project-poem-generator-1/overview target="_blank">on Netlify.</a> 
+    </footer>
+
+    <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
